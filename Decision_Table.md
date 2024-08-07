@@ -26,16 +26,16 @@ Let's walk through an example of a decision table to help you understand the con
 Imagine a library has the following rules for borrowing books:
 - If the borrower is a student and the book is available, they can borrow the book.
 - If the borrower is a teacher, they can borrow the book regardless of its availability.
-- If the borrower is neither a student nor a teacher, they can only borrow the book if it's available and they pay a fee.
+- If the borrower is neither a student nor a teacher, they can only borrow the book if it's available, and they pay a fee.
 
 Now, let's create a decision table to represent these rules:
 
-| Conditions | Test Case 1 | Test Case 2 | Test Case 3 | Test Case 4 | Test Case 5 | Test Case 6 |
-|------------|-------------|-------------|-------------|-------------|-------------|-------------|
-| Borrower Type | Student | Student | Teacher | Teacher | Other | Other |
-| Book Availability | Available | Not Available | Available | Not Available | Available | Not Available |
-| Allow Borrowing | ✓ | ✗ | ✓ | ✓ | ✓ | ✗ |
-| Charge Fee | ✗ | ✗ | ✗ | ✗ | ✓ | ✗ |
+| Conditions        | Test Case 1 | Test Case 2   | Test Case 3 | Test Case 4   | Test Case 5 | Test Case 6   |
+|-------------------|-------------|---------------|-------------|---------------|-------------|---------------|
+| Borrower Type     | Student     | Student       | Teacher     | Teacher       | Other       | Other         |
+| Book Availability | Available   | Not Available | Available   | Not Available | Available   | Not Available |
+| Allow Borrowing   | ✓           | ✗             | ✓           | ✓             | ✓           | ✗             |
+| Charge Fee        | ✗           | ✗             | ✗           | ✗             | ✓           | ✗             |
 
 Let's break down the decision table:
 
@@ -102,18 +102,18 @@ The shopping cart system performs the following actions based on the combination
 2. Fill in the table with the appropriate values for each combination of conditions.
 3. Ensure that all possible combinations are covered.
 
-| Conditions | Test Case 1 |
-|------------|---------|
-| Product Type |       |
-| Quantity   |         |
-| Discount Code |      |
-| Calculate Subtotal |   |
-| Apply Discount |      |
-| Calculate Tax |       |
-| Calculate Shipping |  |
-| Calculate Total |     |
-| Update Inventory |    |
-| Generate Invoice |    |
+| Conditions         | Test Case 1 | Test Case 2 | Test Case 3 | Test Case 4 |
+|--------------------|-------------|-------------|-------------|-------------|
+| Product Type       | Physical    | Physical    | Digital     | Digital     |
+| Quantity           | 1           | 2           | 1           | 2           |
+| Discount Code      | Valid       | Invalid     | Valid       | Invalid     |
+| Calculate Subtotal | ✓           | ✓           | ✓           | ✓           |
+| Apply Discount     | ✓           | ✗           | ✓           | ✗           |
+| Calculate Tax      | ✓           | ✓           | ✗           | ✗           |
+| Calculate Shipping | ✓           | ✓           | ✗           | ✗           |
+| Calculate Total    | ✓           | ✓           | ✓           | ✓           |
+| Update Inventory   | ✓           | ✓           | ✗           | ✗           |
+| Generate Invoice   | ✓           | ✓           | ✓           | ✓           |
 
 ### Task 3: Identify Test Cases
 1. Based on the decision table, identify the test cases that need to be executed.
@@ -148,19 +148,19 @@ Actions:
 - Generate Invoice
 
 ### Task 2: Create the Decision Table
-| Conditions | Test Case 1 | Test Case 2 | Test Case 3 | Test Case 4 |
-|------------|-------------|-------------|-------------|-------------|
-| Product Type | Physical  | Physical    | Digital     | Digital     |
-| Quantity   | 1           | 2           | 1           | 2           |
-| Discount Code | Valid     | Invalid     | Valid       | Invalid     |
-| Actions    |             |             |             |             |
-| Calculate Subtotal | ✓   | ✓           | ✓           | ✓           |
-| Apply Discount | ✓       | ✗           | ✓           | ✗           |
-| Calculate Tax | ✓         | ✓           | ✗           | ✗           |
-| Calculate Shipping | ✓   | ✓           | ✗           | ✗           |
-| Calculate Total | ✓       | ✓           | ✓           | ✓           |
-| Update Inventory | ✓      | ✓           | ✗           | ✗           |
-| Generate Invoice | ✓      | ✓           | ✓           | ✓           |
+| Conditions         | Test Case 1 | Test Case 2 | Test Case 3 | Test Case 4 |
+|--------------------|-------------|-------------|-------------|-------------|
+| Product Type       | Physical    | Physical    | Digital     | Digital     |
+| Quantity           | 1           | 2           | 1           | 2           |
+| Discount Code      | Valid       | Invalid     | Valid       | Invalid     |
+| Actions            |             |             |             |             |
+| Calculate Subtotal | ✓           | ✓           | ✓           | ✓           |
+| Apply Discount     | ✓           | ✗           | ✓           | ✗           |
+| Calculate Tax      | ✓           | ✓           | ✗           | ✗           |
+| Calculate Shipping | ✓           | ✓           | ✗           | ✗           |
+| Calculate Total    | ✓           | ✓           | ✓           | ✓           |
+| Update Inventory   | ✓           | ✓           | ✗           | ✗           |
+| Generate Invoice   | ✓           | ✓           | ✓           | ✓           |
 
 ### Task 3: Identify Test Cases
 - TC1: Physical product, quantity 1, valid discount code

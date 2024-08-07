@@ -38,24 +38,26 @@ You are tasked with testing a search functionality that allows users to specify 
 
 | Boundary Values |
 |-----------------|
-|                 |
-|                 |
-|                 |
-|                 |
-|                 |
+| 1    v          |
+| 100    v        |
+| 55    v         |
+| 102    iv       |
+| 0       iv      |
+| non-integer iv  |
 
 ### Task 2: Design Test Cases
 1. Design test cases to cover the identified boundary values.
 2. Ensure that your test cases cover both valid and invalid scenarios.
 3. Fill in the table below with the designed test cases.
 
-| Test Case | Input Value | Expected Result |
-|-----------|-------------|-----------------|
-|           |             |                 |
-|           |             |                 |
-|           |             |                 |
-|           |             |                 |
-|           |             |                 |
+| Test Case | Input Value | Expected Result                                                          |
+|-----------|-------------|--------------------------------------------------------------------------|
+| 1         | 1           | 1 item shown                                                             |
+| 100       | 100         | 100 items shown                                                          |
+| 55        | 55          | 55 items shown                                                           |
+| 102       | 102         | error not between x and x                                                |
+| 0         | 0           | error not between x and x                                                |
+| hello     | hello       | error 'hello' is not a valid input please enter a number between 1 & 100 |
 
 ### Task 3: Discuss and Share
 1. Discuss your boundary values and test cases with your group.

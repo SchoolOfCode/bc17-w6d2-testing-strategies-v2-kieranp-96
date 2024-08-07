@@ -49,27 +49,27 @@ You are tasked with testing a registration form that has the following input fie
 2. Identify the invalid equivalence classes for the Age field.
 3. Fill in the table below with the identified equivalence classes.
 
-| Input Field | Valid Equivalence Classes | Invalid Equivalence Classes |
-|-------------|---------------------------|----------------------------|
-| Age         |                           |                            |
+| Input Field | Valid Equivalence Classes                                    | Invalid Equivalence Classes  |
+|-------------|--------------------------------------------------------------|------------------------------|
+| Age         | integer between 18 and 120<br/> should contain only integers | integer under 18 or over 120 |
 
 ### Task 2: Identify Equivalence Classes for Email
 1. Identify the valid equivalence classes for the Email field.
 2. Identify the invalid equivalence classes for the Email field.
 3. Fill in the table below with the identified equivalence classes.
 
-| Input Field | Valid Equivalence Classes | Invalid Equivalence Classes |
-|-------------|---------------------------|----------------------------|
-| Email       |                           |                            |
+| Input Field | Valid Equivalence Classes                                                             | Invalid Equivalence Classes                     |
+|-------------|---------------------------------------------------------------------------------------|-------------------------------------------------|
+| Email       | should contain valid chars<br/> should contain valid symbols @ <br/> should contain a domain | no @<br/> invalid chars <br/>invalid symb<br/> no domain |
 
 ### Task 3: Identify Equivalence Classes for Password
 1. Identify the valid equivalence classes for the Password field.
 2. Identify the invalid equivalence classes for the Password field.
 3. Fill in the table below with the identified equivalence classes.
 
-| Input Field | Valid Equivalence Classes | Invalid Equivalence Classes |
-|-------------|---------------------------|----------------------------|
-| Password    |                           |                            |
+| Input Field | Valid Equivalence Classes                                                              | Invalid Equivalence Classes                               |
+|-------------|----------------------------------------------------------------------------------------|-----------------------------------------------------------|
+| Password    | between 8 - 20 chars<br/> atleast one uppercase letter<br/> one lowercase letter and one digit | all lowercase<br/> all capitilised<br/> no numbers<br/> all numbers??? |
 
 ### Task 4: Discuss and Share
 1. Discuss your findings with your group.
